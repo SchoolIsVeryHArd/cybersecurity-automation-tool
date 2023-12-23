@@ -55,7 +55,7 @@ for packet in cap:
         print(f"source IP: {packet.ip.src}")
         print(f"destination IP: {packet.ip.dst}")
 
-filtered = filter_packets(cap, ip='192.168.1.6')
+filtered = filter_packets(cap, ip='')
 analysis = analyze_packet(filtered)
 print(analysis)
 # Closing the capture file
